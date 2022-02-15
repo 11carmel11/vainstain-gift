@@ -14,6 +14,7 @@ const CouponSchema = mongoose.Schema({
     type: Boolean,
     default: false,
   },
+  id: String,
 });
 
 const Coupon = mongoose.model("Coupons", CouponSchema);
