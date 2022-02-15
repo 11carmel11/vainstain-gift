@@ -15,21 +15,15 @@ sendGrid.setApiKey(sendGridApiKey);
 const msg = {
   to: "11carmrl11@gmail.com",
   from: "11carmel11@walla.com",
-  // subject: "nitzan and yuri using coupon",
-  // text: "and easy to do anywhere, even with Node.js",
-  // html: "<strong>and easy to do anywhere, even with Node.js</strong>",
 };
 //#endregion
 
 const app = express();
 
+app.use(express.static("build"));
 app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 app.use(express.json());
-
-app.get("/", (_req, res) => {
-  res.json("hello");
-});
 
 app.get("/coupons", async (_req, res) => {
   let coupons = await Coupons.find({});
