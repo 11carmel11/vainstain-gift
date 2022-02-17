@@ -15,7 +15,7 @@ export default function InfoModal({ show, setShow }) {
         <Modal.Body>
           !שלום לכם
           <br />
-          ,באתר נמצאים ארבעה קופונים
+          ,באתר נמצאים חמישה קופונים
           <br />
           !שתוכלו לממש מתי שרק תרצו
           <br />

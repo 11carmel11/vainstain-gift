@@ -33,7 +33,7 @@ app.get("/coupons", async (_req, res) => {
     return coupon;
   });
 
-  res.json({ coupons, freeUse: coupons.length === 4 });
+  res.json({ coupons, freeUse: coupons.length === 5 });
 });
 
 app.put("/use", async (req, res) => {
